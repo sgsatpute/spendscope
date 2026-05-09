@@ -38,7 +38,6 @@ export default function HomePage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Persist form state
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     if (saved) {
@@ -132,7 +131,7 @@ export default function HomePage() {
           Free AI Spend Audit
         </div>
         <h1 className="text-5xl md:text-6xl mb-4" style={{ fontFamily: 'var(--font-display)', lineHeight: 1.1 }}>
-          You're probably<br />
+          You&apos;re probably<br />
           <em style={{ color: 'var(--color-accent)' }}>overpaying</em> for AI.
         </h1>
         <p className="text-lg mb-2" style={{ color: 'var(--color-muted)' }}>
@@ -166,7 +165,6 @@ export default function HomePage() {
                 style={{
                   background: 'var(--color-surface)',
                   borderColor: 'var(--color-border)',
-                  focusRingColor: 'var(--color-accent)',
                 }}
               />
             </label>
@@ -196,7 +194,7 @@ export default function HomePage() {
             2. Which AI tools does your team pay for?
           </h2>
           <p className="text-sm mb-6" style={{ color: 'var(--color-muted)' }}>
-            Select all that apply. We'll audit each one.
+            Select all that apply. We&apos;ll audit each one.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {TOOL_IDS.map((id) => {
