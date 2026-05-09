@@ -113,7 +113,7 @@ export default function AuditResultsClient({ audit }: Props) {
               {isAlreadyGood ? (
                 <>
                   <h1 className="text-4xl md:text-5xl mb-2" style={{ fontFamily: 'var(--font-display)' }}>
-                    You're spending well.
+                    You&apos;re spending well.
                   </h1>
                   <p className="opacity-70 text-lg">
                     ${audit.totalMonthlySpend.toLocaleString()}/mo across {audit.input.tools.length} tool{audit.input.tools.length !== 1 ? 's' : ''} — no major waste detected.
@@ -193,7 +193,7 @@ export default function AuditResultsClient({ audit }: Props) {
                   You've identified {formatCurrencyFull(audit.totalMonthlySavings)}/mo in plan optimizations.
                   Credex sources discounted AI infrastructure credits — Cursor, Claude, ChatGPT Enterprise —
                   from companies that over-purchased. Same product, typically 15–30% below retail.
-                  At your spend level, it's worth a 20-minute conversation.
+                  At your spend level, it&apos;s worth a 20-minute conversation.
                 </p>
                 <a
                   href={`https://credex.rocks/consult?ref=spendscope&aid=${audit.id}&savings=${audit.totalMonthlySavings}`}
@@ -222,8 +222,8 @@ export default function AuditResultsClient({ audit }: Props) {
               </h3>
               <p className="text-sm" style={{ color: 'var(--color-muted)' }}>
                 {isHighSavings
-                  ? "We'll also follow up about how Credex can help you capture more of these savings."
-                  : "We'll notify you when new optimizations apply to your stack."}
+                  ? "We&apos;ll also follow up about how Credex can help you capture more of these savings."
+                  : "We&apos;ll notify you when new optimizations apply to your stack."}
               </p>
             </div>
           ) : (
@@ -235,7 +235,7 @@ export default function AuditResultsClient({ audit }: Props) {
               </h3>
               <p className="text-sm mb-6" style={{ color: 'var(--color-muted)' }}>
                 {isAlreadyGood
-                  ? "Your current stack is well-optimized. We'll email you when pricing changes or better alternatives emerge for your tools."
+                  ? "Your current stack is well-optimized. We&apos;ll email you when pricing changes or better alternatives emerge for your tools."
                   : 'Your full audit breakdown + a permanent link. No spam, ever.'}
               </p>
               <form onSubmit={handleLeadSubmit} className="space-y-3">
